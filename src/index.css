@@ -1,13 +1,81 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Quicksand&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Quicksand', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navigation {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.navigation h3 {
+  color: rgb(17, 2, 58);
+}
+
+.navigation .links {
+  margin-left: auto;
+}
+
+.navigation a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.navigation a:hover {
+  color: #f1356d;
+}
+
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Studets List Styles */
+.studentList {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(250, 250, 250);
+  margin: 20px;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.studentList:hover {
+  box-shadow: 1px 1px 3px #238db8;
+}
+
+.studentName {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.studentAge,
+.studentDepartment {
+  opacity: 0.7;
+}
+
+.eligible {
+  padding: 5px 15px;
+  background-color: rgb(19, 143, 3);
+  border-radius: 15px;
+  color: white;
+  font-size: 13px;
+}
+
+.noteligible {
+  padding: 5px 15px;
+  background-color: rgb(190, 5, 5);
+  border-radius: 15px;
+  color: white;
+  font-size: 13px;
 }
