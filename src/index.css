@@ -79,3 +79,9 @@
   color: white;
   font-size: 13px;
 }
+
+.loading {
+  color: green;
+  font-size: 40px;
+  
+}
